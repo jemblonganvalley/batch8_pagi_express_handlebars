@@ -80,3 +80,13 @@ p{
 .menu_item a:hover{
     color: orange;
 }
+
+.footer{
+    width: 100vw;
+    height: 20vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}

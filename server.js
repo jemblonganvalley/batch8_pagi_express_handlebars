@@ -4,6 +4,7 @@ const cors = require("cors")
 const hb = require("express-handlebars")
 const app = express()
 const path = require("path")
+const port = process.env.PORT || 3000
 
 //set middleware 
 app.use(cors())
@@ -46,4 +47,4 @@ app.get("/contact" , (req,res)=>{
 })
 
 //listener / server yang dijalankan
-app.listen(3000 , ()=>{console.log("server berjalan di port 3000")})
+app.listen(port , ()=>{console.log("server berjalan di port 3000")})

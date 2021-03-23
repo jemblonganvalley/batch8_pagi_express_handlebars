@@ -4,7 +4,7 @@
   "description": "belajar view engine dengan express handlebars",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "dev": "nodemon server.js --watch"
   },
   "author": "fadliselaz",
   "license": "MIT",

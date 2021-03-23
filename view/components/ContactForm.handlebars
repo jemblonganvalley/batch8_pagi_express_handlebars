@@ -1,12 +1,27 @@
-<form class="contact_form">
+<form class="contact_form" action="/send" method="GET">
     <label for="name">name</label>
-    <input type="text" id="name">
+    <input type="text" id="name" name="name">
 
     <label for="email">email</label>
-    <input type="email" id="email">
+    <input type="email" id="email" name="email">
 
     <label for="message">message</label>
-    <input type="textarea" id="message">
+    <textarea id="message" name="message"></textarea>
 
-    <button>submit</button>
+    <button type="submit">submit</button>
 </form>
+
+<!--Conditional rendering-->
+{{#if message}}
+<div class="card_info">
+
+    <h3 class="card_title">Terimakasih</h3>
+    <p class="card_body">
+        Hai.. {{name}}.. <br>
+        Terimakasih kamu telah menghubungi kami.. <br>
+        Kami akan membalas ke email {{email}} <br><br>
+        <i>Jvalley</i>
+    </p>
+
+</div>
+{{/if}}

@@ -90,3 +90,28 @@ p{
     align-items: center;
     color: whitesmoke;
 }
+
+.contact_form{
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact_form input{
+    height: 35px;
+    padding: 0 8px;
+    font-family: inherit;
+}
+
+#message{
+    height: 100px;
+    padding: 8px;
+    font-family: inherit;
+}
+
+.contact_form button{
+    height: 35px;
+    font-family: inherit;
+}

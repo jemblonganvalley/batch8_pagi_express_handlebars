@@ -45,5 +45,21 @@ app.get("/contact" , (req,res)=>{
     })
 })
 
+app.get("/send" , (req,res)=>{
+
+    //tangkap query
+    const nm = req.query.name
+    const em = req.query.email
+    const msg = req.query.message
+
+    //render sekaligus lempar data
+    res.render("contact", {
+        email : em,
+        name : nm,
+        message : msg
+    })
+
+})
+
 //listener / server yang dijalankan
 app.listen(3000 , ()=>{console.log("server berjalan di port 3000")})
